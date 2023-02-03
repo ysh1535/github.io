@@ -319,5 +319,19 @@ header .navbar a:hover {
   html {
     font-size: 50%;
   }
+
+  .home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/38.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  /* .home {
+    background: none;
+  } */
 }
 
