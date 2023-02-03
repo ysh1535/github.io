@@ -236,7 +236,7 @@ header .navbar a:hover {
 }
 
 .clients .row .box-container .box img {
-  height: 30rem;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: .5rem;
@@ -247,6 +247,35 @@ header .navbar a:hover {
 .clients .row .box-container .box .info {
   padding: 2rem 0;
 }
+
+.clients .row .box-container .box .info h3 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.clients .row .box-container .box .info p {
+  font-size: 1.7rem;
+  color: #eee;
+  padding: 1rem 0;
+  font-style: italic;
+}
+
+.clients .row .box-container .box .info p i {
+  color: var(--pink);
+  padding: 0 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -313,6 +342,19 @@ header .navbar a:hover {
     font-size: 4rem;
     width: auto;
   }
+
+  .clients .row {
+    flex-flow: column;
+  }
+
+  .clients .row .divider {
+    display: none;
+  }
+
+  .clients .row .box-container:last-child .box {
+    display: flex;
+    flex-flow: column-reverse;
+  } 
 }
 
 @media(max-width: 450px) {
@@ -328,6 +370,11 @@ header .navbar a:hover {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+  }
+
+  .vendor .heading h1 {
+    font-size: 3.5rem;
+    text-align: center;
   }
 
   /* .home {
