@@ -39,8 +39,8 @@ section {
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  border: .3rem solid #f03eed;
-  color: #f03eed;
+  border: .3rem solid var(--black);
+  color: var(--black);
   font-size: 1.7rem;
   padding: 0.8rem 3rem;
   cursor: pointer;
@@ -265,7 +265,143 @@ header .navbar a:hover {
   padding: 0 0.5rem;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.gallery .heading {
+  margin: 0 auto;
+}
+
+.gallery .slide {
+  width: 50rem;
+  background: #f6dede;
+  border-radius: .5rem;
+  padding: 1rem .5rem;
+  text-align: center;
+}
+
+.gallery .slide img {
+  height: 30rem;
+  width: 90%;
+}
+
+.gallery .slide h3 {
+  font-size: 1.5rem;
+  color: var(--pink);
+  margin: .5rem 0;
+}
+
+.gallery .slide p {
+  font-size: 1rem;
+  color: #0c0c0c;
+  margin-top: 1rem;
+}
+
+.swiper-pagination-bullet {
+  background: #000000;
+}
+
+.swiper-pagination-bullet-active {
+  background: #c70b40;
+} 
+
+
+.contact form {
+  padding: 2rem;
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.9);
+  text-align: center;
+}
+
+.contact form .inputBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea {
+  border: .2rem solid rgba(0,0,0,.1);
+  font-size: 1.7rem;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  text-transform: none;
+  color: #333;
+}
+
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder {
+  text-transform: capitalize;
+}
+
+.contact form .inputBox input:focus,
+.contact form textarea:focus {
+  border-color: var(--pink);
+}
+
+.contact form .inputBox input {
+  width: 49%;
+}
+
+.contact form textarea {
+  height: 15rem;
+  width: 100%;
+  resize: none;
+}
+
+.blog .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blog .box-container .box {
+  background: #fff;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.9);
+  overflow: hidden;
+  flex: 1 1 30rem;
+}
+
+.blog .box-container .box img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog .box-container .box h3 {
+  color: var(--black);
+  font-size: 2rem;
+}
+
+.blog .box-container .box h3 span {
+  color: var(--pink);
+  font-weight: bolder;
+}
+
+.blog .box-container .box p {
+  color: #333;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.footer {
+  padding: 2.5rem 1.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  background: #fff;
+  text-align: center;
+}
+
+.footer span {
+  color: var(--pink);
+}
 
 
 
@@ -288,13 +424,49 @@ header .navbar a:hover {
   }
 }
 
-@media(max-width: 991px) {
+@media(max-width: 1024px) {
   header {
     padding: 2rem 4%;
   }
 
   section {
     padding: 3rem 4%;
+  }
+
+  .gallery .slide {
+    width: 50rem;
+    background: #f6dede;
+    border-radius: .5rem;
+    padding: 1rem .5rem;
+    text-align: center;
+  }
+  
+  .gallery .slide img {
+    height: 50rem;
+    width: 80%;
+  }
+  
+  .gallery .slide h3 {
+    font-size: 1.5rem;
+    color: var(--pink);
+    margin: 1rem 0;
+  }
+  
+  .gallery .slide p {
+    font-size: 1rem;
+    color: #595656;
+  }
+}
+
+@media(max-width: 991px) {
+  header {
+    padding: 2rem 4%;
+    /* padding: 7rem 8%; */
+  }
+
+  section {
+    padding: 3rem 4%;
+    /* padding: 7rem 8%; */
   }
 }
 
@@ -355,6 +527,10 @@ header .navbar a:hover {
     display: flex;
     flex-flow: column-reverse;
   } 
+
+  .contact form .inputBox input {
+    width: 100%;
+  }
 }
 
 @media(max-width: 450px) {
@@ -370,6 +546,15 @@ header .navbar a:hover {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+  }
+
+  .home .content span {
+    font-size: 3.5rem;
+  }
+
+  .home .content h3 {
+    font-size: 4.5rem;
+    width: auto;
   }
 
   .vendor .heading h1 {
