@@ -27,11 +27,11 @@
 
     <nav class="navbar">
         <a href="#home">home</a>
-        <a href="#vendor">wedding pictures</a>
+        <a href="#vendor">wedding-pictures</a>
         <a href="#clients">our story</a>
-        <a href="#gallery">gallery</a>
-        <a href="#contact">contact</a>
-        <a href="#blog">blog</a>
+        <a href="#gallery">wedding-gallery</a>
+        <a href="#images">gallery</a>
+        <a href="#video">wedding-video</a>
     </nav>
 </header>
 <!-- header section ends  -->
@@ -278,56 +278,42 @@
 </section>
 <!-- courses section ends -->
 
-<!-- team section starts  -->
-<!-- <section class="team" id="team">
+<!-- image section starts  -->
+<section class="images" id="images">
+    <!-- <div class="content">
+        <h3>variable gallery page</h3>
+        <p>Now you will feel no rain,
+            For each of you will be shelter to the other. </p>
+        <a href="#" class="btn">happy days</a>
+    </div> -->
     <div class="heading">
-        <h1>our one-team</h1>
+        <h1>gallery</h1>
         <img src="images/header-img.png" alt="">
     </div>
 
-    <div class="box-container">
-        <div class="box">
-            <img src="images/team-1.png" alt="">
-            <h3>john deo</h3>
-            <span>wedding planner</span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis doloribus earum dignissimos reprehenderit magnam veritatis labore dicta tempore totam sunt.</p>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/team-2.png" alt="">
-            <h3>john deo</h3>
-            <span>wedding planner</span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis doloribus earum dignissimos reprehenderit magnam veritatis labore dicta tempore totam sunt.</p>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/team-3.png" alt="">
-            <h3>john deo</h3>
-            <span>wedding planner</span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis doloribus earum dignissimos reprehenderit magnam veritatis labore dicta tempore totam sunt.</p>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
+    <div class="swiper image-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/img1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img2.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img3.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img4.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img5.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img6.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img7.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img8.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img9.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img10.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img11.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img12.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img13.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img14.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img15.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/img16.png" alt=""></div>
         </div>
     </div>
 
-</section> -->
-<!-- team section ends  -->
+</section>
+<!-- image section ends -->
 
 <!-- contact section starts  -->
 <!-- <section class="contact" id="contact">
@@ -383,9 +369,19 @@
     </div>
 </section> -->
 <!-- blog section ends  -->
+<div class="heading" id="video">
+    <h1>Video</h1>
+    <img src="images/header-img.png" alt="">
+</div>
+<div style="border: 2rem solid #ee0548;">
+    <video width="100%" height="100%" controls>
+        <source src="/images/wedding.mp4" type="video/mp4">
+    </video>
+</div>
+
 
 <!-- footer section -->
-<div class="footer"> created by <span>Mr.You Designer</span> | all right reserved!</div>
+<div class="footer"> created by <span>Y.S.H Web Designer</span> | all right reserved!</div>
 
 
 
@@ -394,6 +390,24 @@
 
 <!-- jquery js cdn link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<!-- <script> 
+
+    let menu = document.querySelector('#menu-bar');
+    let navbar = document.querySelector('.navbar');
+    
+    menu.addEventListener('click', () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('nav-toggle');
+    });
+    
+    window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('nav-toggle');
+    }
+    
+</script> -->
+    
 
 </body>
 </html>

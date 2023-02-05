@@ -39,8 +39,8 @@ section {
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  border: .3rem solid var(--black);
-  color: var(--black);
+  border: .3rem solid var(--pink);
+  color: var(--pink);
   font-size: 1.7rem;
   padding: 0.8rem 3rem;
   cursor: pointer;
@@ -283,7 +283,7 @@ header .navbar a:hover {
 }
 
 .gallery .slide img {
-  height: 30rem;
+  height: 35rem;
   width: 90%;
 }
 
@@ -307,7 +307,52 @@ header .navbar a:hover {
   background: #c70b40;
 } 
 
+.images {
+  background: linear-gradient(to bottom, #100f11, #dfdddd, #e2eef6);
+  /*background-size: cover;
+  background-position: center; */
+  text-align: center;
+  /* min-height: 100vh; */
+}
 
+.images .content {
+  padding-top: 5rem;
+  width: 70rem;
+  margin: 0 auto;
+}
+
+.images .content h3 {
+  font-size: 6.5rem;
+  color: #fff;
+}
+
+.images .content p {
+  font-size: 1.7rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.images .swiper {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.images .swiper-slide {
+  /* background-position: center;
+  background-size: cover; */
+  width: 30rem;
+  height: 30rem;
+}
+
+.images .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 
 .contact form {
   padding: 2rem;
   background: #fff;
@@ -403,17 +448,7 @@ header .navbar a:hover {
   color: var(--pink);
 }
 
-
-
-
-
-
-
-
-
-
-
-
+ */
 
 
 
@@ -421,6 +456,14 @@ header .navbar a:hover {
 @media(max-width: 1200px) {
   html {
     font-size: 55%;
+  }
+
+  header {
+    padding: 2rem 4%;
+  }
+
+  section {
+    padding: 3rem 4%;
   }
 }
 
@@ -471,6 +514,14 @@ header .navbar a:hover {
 }
 
 @media(max-width: 768px) {
+  header {
+    padding: 2rem 4%;
+  }
+
+  section {
+    padding: 3rem 4%;
+  }
+
   #menu-bar {
     display: block;
   }
@@ -538,6 +589,14 @@ header .navbar a:hover {
     font-size: 50%;
   }
 
+  header {
+    padding: 2rem 4%;
+  }
+
+  section {
+    padding: 3rem 4%;
+  }
+
   .home {
     min-height: 100vh;
     display: flex;
@@ -560,6 +619,14 @@ header .navbar a:hover {
   .vendor .heading h1 {
     font-size: 3.5rem;
     text-align: center;
+  }
+
+  .images .content {
+    text-align: center;
+  }
+
+  .images .content h3 {
+    font-size: 10rem;
   }
 
   /* .home {
